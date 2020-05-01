@@ -11,10 +11,10 @@ import cucumber.api.junit.Cucumber;
 		format = {"pretty","html:Cucumber.html"},
 		monochrome = true,
 		strict = true,
-		dryRun = true
+		dryRun = false
 		)
 
-public class LoginRunner {
+public class DealsListRunner {
 	
 }
 
