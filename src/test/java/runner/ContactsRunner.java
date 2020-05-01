@@ -7,14 +7,14 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/main/java/features/Login.feature",
-		glue = "stepDefinitions",
+		features = "src/main/java/features/Contacts.feature",
+		glue = "stepDefinitions/ContactsStepDefinition",
 		format = {"pretty","html:Cucumer.html"},
 		monochrome = true,
 		strict = true,
-		dryRun = false
+		dryRun = true
 		)
 
-public class LoginTestRunner {
+public class ContactsRunner {
 
 }
