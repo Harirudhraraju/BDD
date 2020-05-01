@@ -84,7 +84,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "Tom",
+        "batchautomation",
         "Test@12345",
         "rhr321",
         "rhr123",
@@ -157,13 +157,15 @@ formatter.match({
   "location": "ContactsStepDefinition.user_is_on_free_crm_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12907602792,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.the_title_of_free_crm_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 166672750,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -179,25 +181,29 @@ formatter.match({
   "location": "ContactsStepDefinition.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8495710542,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.user_clicks_on_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1594269620,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 170562536,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.user_moves_contacts_and_click_new_contact()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14817065404,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -217,13 +223,15 @@ formatter.match({
   "location": "ContactsStepDefinition.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4566185742,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 803445753,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 18,
@@ -245,7 +253,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters \"Tom\" and \"Test@12345\"",
+  "name": "user enters \"batchautomation\" and \"Test@12345\"",
   "matchedColumns": [
     0,
     1
@@ -286,47 +294,53 @@ formatter.match({
   "location": "ContactsStepDefinition.user_is_on_free_crm_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14994286379,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.the_title_of_free_crm_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 162725390,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Tom",
+      "val": "batchautomation",
       "offset": 13
     },
     {
       "val": "Test@12345",
-      "offset": 23
+      "offset": 35
     }
   ],
   "location": "ContactsStepDefinition.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7877445766,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.user_clicks_on_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2724887693,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 230130192,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.user_moves_contacts_and_click_new_contact()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18389473159,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -346,12 +360,14 @@ formatter.match({
   "location": "ContactsStepDefinition.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4463274751,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactsStepDefinition.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 717920828,
+  "status": "passed"
 });
 });

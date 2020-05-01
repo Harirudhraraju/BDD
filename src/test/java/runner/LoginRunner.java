@@ -6,9 +6,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/main/java/features/Login.feature",
+		features = "src\\main\\java\\features\\Contacts.feature",
 		glue = {"stepDefinitions"},
-		format = {"pretty","html:Cucumer.html"},
+		format = {"pretty","html:Cucumber.html"},
 		monochrome = true,
 		strict = true,
 		dryRun = false

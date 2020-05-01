@@ -1,13 +1,18 @@
-Feature: Free CRM Test Feature
+Feature: Free CRM Contacts Feature
 
-Scenario: Free CRM Login Test
-
+Scenario Outline: Free CRM Create Contacts  Details Test
 
 Given user is on free crm page
 Then the title of free crm page
-Then user enters username and password
+Then user enters "<username>" and "<password>"
 Then user clicks on button 
 Then user is on home page
-Then user moves contacts tab
-Then user click on new contact 
+Then user moves contacts and click new contact
+Then user enters contact details "<firstname>" and "<lastname>" and "<company>"
 Then close the browser
+
+Examples:
+
+|      username       |   password   | firstname | lastname | company |
+|    batchautomation  |   Test@12345 |  rhr123   | rhr321   | imedx   |
+|    batchautomation  |   Test@12345 |  rhr321   | rhr123   | imedxx  |

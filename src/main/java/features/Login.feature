@@ -14,22 +14,22 @@ Feature: Free CRM Test Feature
 
 
 
-Scenario Outline: Free CRM Login Test
-
-Given user is on free crm page
-Then the title of free crm page
-Then user enters "<username>" and "<password>"
-Then user clicks on button 
-Then user is on home page
-Then close the browser
-
-Examples:
-|      username           |   password   |
-|    batchautomation      |   Test@12345 |
-|        Tom              |   Test@12345 |
-
-		
-		
+#Scenario Outline: Free CRM Login Test
+#
+#Given user is on free crm page
+#Then the title of free crm page
+#Then user enters "<username>" and "<password>"
+#Then user clicks on button 
+#Then user is on home page
+#Then close the browser
+#
+#Examples:
+#|      username           |   password   |
+#|    batchautomation      |   Test@12345 |
+#|        Tom              |   Test@12345 |
+#
+#		
+#		
 		
 		
 		
