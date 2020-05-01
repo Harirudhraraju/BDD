@@ -13,12 +13,14 @@ import cucumber.api.java.en.Then;
 public class LoginStepDefinition {
 
 	static WebDriver driver;
-	static String Path=System.getProperty("user.dir");
+	static String Path = System.getProperty("user.dir");
 
 	@Given("^user is on free crm page$")
 	public void user_is_on_free_crm_page() {
-		System.setProperty("webdriver.chrome.driver", Path+"\\Drivers\\chromedriver.exe");
-		ChromeOptions options=new ChromeOptions();
+
+		System.setProperty("webdriver.chrome.silentOutput", "true");
+		System.setProperty("webdriver.chrome.driver", Path + "\\Drivers\\chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
 		options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 		driver = new ChromeDriver(options);
@@ -27,33 +29,36 @@ public class LoginStepDefinition {
 	}
 
 	@Then("^the title of free crm page$")
-	public void the_title_of_free_crm_page(){
-		String title=driver.getTitle();
-		System.out.println("My Title is : "+title);
+	public void the_title_of_free_crm_page() {
+		String title = driver.getTitle();
+		System.out.println("My Title is : " + title);
 		Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.", title);
 
 	}
 
-	@Then("^user enters username and password$")
-	public void user_enters_username_and_password(){
-		driver.findElement(By.name("username")).sendKeys("batchautomation");
-		driver.findElement(By.name("password")).sendKeys("Test@12345");
+	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_username_and_password(String un,String pwd) throws InterruptedException {
+		driver.findElement(By.name("username")).sendKeys(un);
+		
+		Thread.sleep(3000);
+		driver.findElement(By.name("password")).sendKeys(pwd);
+		Thread.sleep(3000);
 	}
 
 	@Then("^user clicks on button$")
-	public void user_clicks_on_button()  {
+	public void user_clicks_on_button() {
 		driver.findElement(By.cssSelector("input[type='submit']")).click();
 	}
 
 	@Then("^user is on home page$")
 	public void user_is_on_home_page() {
-		String title=driver.getTitle();
-		System.out.println("Again My Title is : "+title);
-		Assert.assertEquals("CRMPRO",title);
+		String title = driver.getTitle();
+		System.out.println("Again My Title is : " + title);
+		Assert.assertEquals("CRMPRO", title);
 	}
 
 	@Then("^close the browser$")
-	public void close_the_browser(){
+	public void close_the_browser() {
 		driver.quit();
 		System.out.println("close the browser");
 	}
